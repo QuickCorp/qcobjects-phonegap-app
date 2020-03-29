@@ -1,0 +1,31 @@
+{
+  "devmode": "debug",
+  "documentRoot": "./www/",
+  "relativeImportPath": "js/packages/",
+  "basePath": ".",
+  "projectPath": ".",
+  "domain": "0.0.0.0",
+  "dataPath": "./data/",
+  "private-cert-pem": "./fullchain.pem",
+  "private-key-pem": "./privkey.pem",
+  "backend": {
+    "routes": [{
+        "name": "OpenAPI3.JSON",
+        "description": "Open API v3 JSON",
+        "path": "^/openapi.json$",
+        "microservice": "org.quickcorp.backend.openapi.json"
+      },
+      {
+        "name": "OpenAPI3.YAML",
+        "description": "Open API v3 YAML",
+        "path": "^/openapi.yaml$",
+        "microservice": "org.quickcorp.backend.openapi.yaml"
+      },
+      {
+        "path": "^/node_modules.*$",
+        "microservice": "com.qcobjects.sdk.forbidden"
+      }
+
+    ]
+  }
+}

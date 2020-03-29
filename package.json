@@ -1,0 +1,53 @@
+{
+  "name": "qcobjects-phonegap-app",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/QuickCorp/qcobjects-phonegap-app.git"
+  },
+  "description": "A QCObjects and PhoneGap Hello World template.",
+  "main": "www/js/init.js",
+  "license": "LGPL-3.0-or-later",
+  "dependencies": {
+    "qcobjects": "latest",
+    "cordova-plugin-battery-status": "~1.2.4",
+    "cordova-plugin-camera": "~2.4.1",
+    "cordova-plugin-media-capture": "~1.4.3",
+    "cordova-plugin-device": "~1.1.6",
+    "cordova-plugin-dialogs": "~1.3.3",
+    "cordova-plugin-file": "~4.3.3",
+    "cordova-plugin-geolocation": "~2.4.3",
+    "cordova-plugin-globalization": "~1.0.7",
+    "cordova-plugin-inappbrowser": "~1.7.1",
+    "cordova-plugin-network-information": "~1.3.3",
+    "cordova-plugin-vibration": "~2.1.5"
+  },
+  "devDependencies": {
+    "cordova-browser": "latest",
+    "cordova-plugin-battery-status": "latest",
+    "cordova-plugin-camera": "latest",
+    "cordova-plugin-compat": "latest",
+    "cordova-plugin-device": "latest",
+    "cordova-plugin-dialogs": "latest",
+    "cordova-plugin-file": "latest",
+    "cordova-plugin-globalization": "latest",
+    "cordova-plugin-inappbrowser": "latest",
+    "cordova-plugin-media-capture": "latest",
+    "cordova-plugin-network-information": "latest",
+    "cordova-plugin-vibration": "latest"
+  },
+  "cordova": {
+    "plugins": {
+      "cordova-plugin-battery-status": {},
+      "cordova-plugin-camera": {},
+      "cordova-plugin-media-capture": {},
+      "cordova-plugin-device": {},
+      "cordova-plugin-dialogs": {},
+      "cordova-plugin-file": {},
+      "cordova-plugin-geolocation": {},
+      "cordova-plugin-globalization": {},
+      "cordova-plugin-inappbrowser": {},
+      "cordova-plugin-network-information": {},
+      "cordova-plugin-vibration": {}
+    }
+  }
+}

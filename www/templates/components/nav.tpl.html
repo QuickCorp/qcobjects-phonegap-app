@@ -1,0 +1,25 @@
+<span class="closebtn" onclick="GLOBAL.sideNavController.toggle()"></span>
+<div class="navcontent">
+  <details>
+    <summary>Main</summary>
+    <ul>
+      <li><a onclick="GLOBAL.sideNavController.close()" href="#">Main</a></li>
+
+    </ul>
+  </details>
+<details>
+    <summary>Register</summary>
+    <ul>
+      <li><a onclick="GLOBAL.sideNavController.close();return true;" href="#signup">Create an account</a></li>
+      <li><a onclick="GLOBAL.sideNavController.close();return true;" href="#signin">Sign In</a></li>
+    </ul>
+</details>
+<details>
+    <summary>Other</summary>
+    <ul>
+      <li><a onclick="GLOBAL.sideNavController.close()" href="#page1">Page 1</a></li>
+      <li><a onclick="GLOBAL.sideNavController.close()" href="#page2">Page 2</a></li>
+      <li><a onclick="GLOBAL.sideNavController.close()" href="#page3">Page 3</a></li>
+    </ul>
+  </details>
+</div>

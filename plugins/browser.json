@@ -1,0 +1,49 @@
+{
+  "prepare_queue": {
+    "installed": [],
+    "uninstalled": []
+  },
+  "config_munge": {
+    "files": {}
+  },
+  "installed_plugins": {
+    "cordova-plugin-battery-status": {
+      "PACKAGE_NAME": "org.quickcorp.phonegap.myapp"
+    },
+    "cordova-plugin-camera": {
+      "PACKAGE_NAME": "org.quickcorp.phonegap.myapp"
+    },
+    "cordova-plugin-media-capture": {
+      "PACKAGE_NAME": "org.quickcorp.phonegap.myapp"
+    },
+    "cordova-plugin-device": {
+      "PACKAGE_NAME": "org.quickcorp.phonegap.myapp"
+    },
+    "cordova-plugin-dialogs": {
+      "PACKAGE_NAME": "org.quickcorp.phonegap.myapp"
+    },
+    "cordova-plugin-geolocation": {
+      "PACKAGE_NAME": "org.quickcorp.phonegap.myapp"
+    },
+    "cordova-plugin-globalization": {
+      "PACKAGE_NAME": "org.quickcorp.phonegap.myapp"
+    },
+    "cordova-plugin-inappbrowser": {
+      "PACKAGE_NAME": "org.quickcorp.phonegap.myapp"
+    },
+    "cordova-plugin-network-information": {
+      "PACKAGE_NAME": "org.quickcorp.phonegap.myapp"
+    },
+    "cordova-plugin-vibration": {
+      "PACKAGE_NAME": "org.quickcorp.phonegap.myapp"
+    }
+  },
+  "dependent_plugins": {
+    "cordova-plugin-compat": {
+      "PACKAGE_NAME": "org.quickcorp.phonegap.myapp"
+    },
+    "cordova-plugin-file": {
+      "PACKAGE_NAME": "org.quickcorp.phonegap.myapp"
+    }
+  }
+}

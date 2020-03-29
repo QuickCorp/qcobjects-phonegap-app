@@ -1,0 +1,20 @@
+image: quickcorp/qcobjects:latest
+
+pages:
+  stage: deploy
+  script:
+  - mkdir public
+  - cp -Rf css/ public/
+  - cp -Rf img/ public/
+  - cp -Rf js/ public/
+  - cp -Rf spec/ public/
+  - cp -Rf templates/ public/
+  - cp *.* public/
+  - cd public
+  - npm i
+  - npm test
+  artifacts:
+    paths:
+    - public
+  only:
+  - master
