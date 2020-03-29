@@ -57,7 +57,8 @@ public class BatteryListener extends CordovaPlugin {
     public boolean execute(String action, JSONArray args, CallbackContext callbackContext) {
         if (action.equals("start")) {
             if (this.batteryCallbackContext != null) {
-                removeBatteryListener();
+                callbackContext.error( "Battery listener already running.");
+                return true;
             }
             this.batteryCallbackContext = callbackContext;
 

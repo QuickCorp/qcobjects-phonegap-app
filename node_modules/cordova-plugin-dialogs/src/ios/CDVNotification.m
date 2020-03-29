@@ -228,11 +228,8 @@ static void soundCompletionCallback(SystemSoundID  ssid, void* data) {
 
 -(UIViewController *)getTopPresentedViewController {
     UIViewController *presentingViewController = self.viewController;
-    if (presentingViewController.view.window != [UIApplication sharedApplication].keyWindow){
-        presentingViewController = [UIApplication sharedApplication].keyWindow.rootViewController;
-    }
-
-    while (presentingViewController.presentedViewController != nil && ![presentingViewController.presentedViewController isBeingDismissed]){
+    while(presentingViewController.presentedViewController != nil && ![presentingViewController.presentedViewController isBeingDismissed])
+    {
         presentingViewController = presentingViewController.presentedViewController;
     }
     return presentingViewController;

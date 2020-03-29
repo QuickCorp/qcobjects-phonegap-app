@@ -41,7 +41,6 @@ matrix:
     android:
       components:
       - tools
-      - build-tools-26.0.2
   - env: PLATFORM=android-5.1
     os: linux
     language: android
@@ -49,7 +48,6 @@ matrix:
     android:
       components:
       - tools
-      - build-tools-26.0.2
   - env: PLATFORM=android-6.0
     os: linux
     language: android
@@ -57,7 +55,6 @@ matrix:
     android:
       components:
       - tools
-      - build-tools-26.0.2
   - env: PLATFORM=android-7.0
     os: linux
     language: android
@@ -65,7 +62,6 @@ matrix:
     android:
       components:
       - tools
-      - build-tools-26.0.2
 before_install:
 - rm -rf ~/.nvm && git clone https://github.com/creationix/nvm.git ~/.nvm && (cd ~/.nvm
   && git checkout `git describe --abbrev=0 --tags`) && source ~/.nvm/nvm.sh && nvm
