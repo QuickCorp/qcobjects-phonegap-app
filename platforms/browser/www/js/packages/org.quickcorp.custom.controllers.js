@@ -5,6 +5,26 @@ Package('org.quickcorp.custom.controllers',[
 	Class('MainController',Controller,{
 	  dependencies:[],
 	  component:null,
+		__appInitialized:false,
+		loadDependencies(callback){
+      var controller = this;
+      if (controller.dependencies.length>0){
+        callback.call(controller);
+      } else {
+				controller.dependencies.push(New(SourceJS,{
+  				url:'cordova.js',
+  				external:false,
+					done: function (){
+						controller.dependencies.push(New(SourceJS,{
+		  				url:'js/index.js',
+		  				external:false,
+							done: function (){callback.call(controller);}
+		  			}));
+					}
+  			}));
+
+      }
+    },
 	  _new_:function (o){
 	    this.__new__(o);
 	    var controller=this;
@@ -13,19 +33,12 @@ Package('org.quickcorp.custom.controllers',[
 		done:function(){
 			var controller = this;
 
-			/*
-			Timer.thread({
-		      duration:300,
-		      timing(timeFraction,elapsed){
-		        return timeFraction;
-		      },
-		      intervalInterceptor(progress){
-								if (progress>=100 && !Component._bindroute.__assigned){
-									controller.component.route();
-								}
-		      }
-		  });
-			*/
+			this.loadDependencies(()=>{
+				if (!MainController.__appInitialized){
+					app.initialize();
+					MainController.__appInitialized = true;
+				}
+			});
 
 
 		}

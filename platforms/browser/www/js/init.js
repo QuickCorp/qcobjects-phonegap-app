@@ -43,15 +43,14 @@ CONFIG.set('serviceWorkerURI','/sw.js'); //QCObjects will register an launch thi
 
 // if Component.cached is true, all the Class('Component') declarations will save the template in a localStorage cache
 // until a cached=false attribute is found in a <component> html declaration
+logger.debugEnabled = true;
 Component.cached=true;
 
 /**
  * Main import sentence.
  */
 
-Import('../../cordova').catch(e=>{
-  logger.debug('cordova is not present')
-});
+
 Import('org.quickcorp.custom'); // this will load js/packages/org.quickcorp.custom.js file
 
 Ready(function (){
