@@ -49,9 +49,11 @@ Component.cached=true;
  * Main import sentence.
  */
 
-
+Import('../../cordova').catch(e=>{
+  logger.debug('cordova is not present')
+});
 Import('org.quickcorp.custom'); // this will load js/packages/org.quickcorp.custom.js file
 
 Ready(function (){
-  // your initial code here   
+  // your initial code here
 });

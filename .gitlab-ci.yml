@@ -1,0 +1,12 @@
+image: quickcorp/qcobjects:latest
+
+pages:
+  stage: deploy
+  script:
+  - npm i
+  - npm test
+  artifacts:
+    paths:
+    - www
+  only:
+  - master
