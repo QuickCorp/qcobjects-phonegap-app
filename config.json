@@ -24,8 +24,15 @@
       {
         "path": "^/node_modules.*$",
         "microservice": "com.qcobjects.sdk.forbidden"
+      },
+      {
+        "name": "Static Files",
+        "description": "Static Files Microservice",
+        "path": "^/plugins/(.*)$",
+        "microservice": "com.qcobjects.backend.microservice.static",
+        "redirect_to":"./plugins/$1",
+        "supported_methods": ["GET"]
       }
-
     ]
   }
 }
