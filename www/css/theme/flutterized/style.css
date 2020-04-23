@@ -1,0 +1,210 @@
+/*
+Name : Flutterized QCObjects Theme
+Author : jeanmachuca
+Author URL : https://github.com/jeanmachuca
+*/
+
+/* NAV */
+component {
+    background-color: #ffffff !important;
+}
+nav>component {
+    background-color: #00c1ff !important;
+}
+
+nav>component a {
+    font-size: 15px !important;
+    color: #28197e !important;
+}
+
+nav>component a:hover {
+    color: #4aa7dd !important;
+}
+
+nav details {
+    background-color: rgba(0, 200, 245,1) !important;
+}
+
+nav {
+    color: white !important;
+}
+
+
+
+nav {
+    text-align: justify !important;
+}
+
+nav>button.navbtn {
+    background-color: #00c1ff !important;
+    color: white !important;
+}
+
+nav>span.topnav {
+    background-color: #00c1ff !important;
+}
+
+/* HEADER */
+header {
+    padding-top: 80px !important;
+}
+
+
+/* FOOTER */
+footer {
+    background: #00c1ff !important;
+    color: #fff !important;
+    border-radius: 50% 50% 20% 20% / 33% 33% 0% 0%;
+}
+
+
+/*** THEME SPECIFIC COLORS AND SETTINGS ***/
+
+header {
+    padding-top: 80px !important;
+    background: #00c1ff !important;
+    color: white !important;
+    border-radius: 0% 0% 50% 50% / 0% 0% 33% 33% !important;
+    position: absolute !important;
+    width: 100% !important;
+    overflow: hidden;
+}
+
+nav,
+article {
+    width: 100% !important;
+    height: auto !important;
+    position: relative !important;
+    margin-top: 340px !important;
+    z-index:1 !important;
+}
+
+.topnav, header {
+    box-shadow: 0 2px 8px rgba(0, 0, 0, .25) !important;
+}
+
+footer {
+    box-shadow: 1px -2px 8px rgba(0, 0, 0, .25) !important;
+}
+
+/**
+INSTALLER BUTTON
+**/
+#installerbutton{
+    left: 30%;
+    top: -15px;
+}
+/** INSTALLER BUTTON **/
+
+/** buttons **/
+
+button:not(.navbtn) {
+    position: relative !important;
+    margin: 0 !important;
+    padding: 5px 12px !important;
+    height: 60px !important;
+    width: 150px !important;
+    outline: none !important;
+    text-decoration: none !important;
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+    cursor: pointer !important;
+    text-transform: uppercase !important;
+    background-color: #ffffff !important;
+    border: 1px solid rgba(22, 76, 167, 0.6) !important;
+    border-radius: 10px !important;
+    color: #1d89ff !important;
+    font-weight: 400 !important;
+    font-size: 20px !important;
+    font-family: inherit !important;
+    z-index: 0 !important;
+    overflow: hidden !important;
+    transition: all 0.3s cubic-bezier(0.02, 0.01, 0.47, 1) !important;
+}
+
+button:not(.navbtn) span {
+    color: #164ca7;
+    font-size: 12px;
+    font-weight: 500;
+    letter-spacing: 0.7px;
+}
+
+button:not(.navbtn):hover {
+    animation: rotate 0.7s ease-in-out both;
+}
+
+button:not(.navbtn):hover span {
+    animation: storm 0.7s ease-in-out both;
+    animation-delay: 0.06s;
+}
+
+@keyframes rotate {
+    0% {
+        transform: rotate(0deg) translate3d(0, 0, 0);
+    }
+
+    25% {
+        transform: rotate(3deg) translate3d(0, 0, 0);
+    }
+
+    50% {
+        transform: rotate(-3deg) translate3d(0, 0, 0);
+    }
+
+    75% {
+        transform: rotate(1deg) translate3d(0, 0, 0);
+    }
+
+    100% {
+        transform: rotate(0deg) translate3d(0, 0, 0);
+    }
+}
+
+@keyframes storm {
+    0% {
+        transform: translate3d(0, 0, 0) translateZ(0);
+    }
+
+    25% {
+        transform: translate3d(4px, 0, 0) translateZ(0);
+    }
+
+    50% {
+        transform: translate3d(-3px, 0, 0) translateZ(0);
+    }
+
+    75% {
+        transform: translate3d(2px, 0, 0) translateZ(0);
+    }
+
+    100% {
+        transform: translate3d(0, 0, 0) translateZ(0);
+    }
+}
+
+button:not(.navbtn):after {
+    left: 50%;
+}
+
+button:not(.navbtn):after {
+    position: absolute;
+    right: 0;
+    left: auto;
+    transition: 0.3s;
+    content: "";
+    width: 0;
+    bottom: 0;
+    height: 3px;
+    background: #164ca7;
+}
+
+button:not(.navbtn):hover {
+    cursor: pointer;
+}
+
+button:not(.navbtn):hover:after {
+    width: 100%;
+    left: 0;
+}
+
