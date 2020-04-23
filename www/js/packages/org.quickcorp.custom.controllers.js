@@ -91,11 +91,11 @@ Package('org.quickcorp.custom.controllers',[
   _new_:function (o){
       this.__new__(o);
       var controller = this;
-      GLOBAL._sdk_.then(function (){
+      global._sdk_.then(function (){
         controller.effect = New(Fade,{duration:300});
       });
-      GLOBAL.sideNavController = this;
-      GLOBAL.sideNavController.close();
+      global.sideNavController = this;
+      global.sideNavController.close();
       //TODO: Implement
 
     },
