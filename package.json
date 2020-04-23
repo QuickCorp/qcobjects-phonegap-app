@@ -8,9 +8,8 @@
   "scripts": {
     "start": "phonegap serve",
     "test": "jasmine",
-    "preversion": "npm test",
-    "version": "npm i --save-dev --upgrade",
-    "postversion": "git push && git push --tags && npm publish",
+    "preversion": "npm i --save-dev --upgrade && npm test",
+    "postversion": "git push && git push --tags",
     "sync": "git add . && git commit -am "
   },
   "description": "A QCObjects and PhoneGap Hello World template.",
