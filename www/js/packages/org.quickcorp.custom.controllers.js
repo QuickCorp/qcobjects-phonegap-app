@@ -96,7 +96,7 @@ Package('org.quickcorp.custom.controllers',[
       });
       global.sideNavController = this;
       global.sideNavController.close();
-      //TODO: Implement
+
 
     },
     done: function (){

@@ -1,0 +1,7 @@
+nav .topnav .login-container {
+    float: none !important;
+    width: 100%;
+    height: auto;
+    position: fixed !important;
+    left: 0;
+}

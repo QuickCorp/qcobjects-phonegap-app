@@ -18,6 +18,7 @@
 @import url("./mobile/index.css") (aspect-ratio: 3/4);
 @import url("./mobile/index.css") (aspect-ratio: 2/3);
 
+/*@import url("./theme/flutterized/style.css");*/
 
 @viewport{
     zoom: 1.0;
