@@ -46,9 +46,6 @@ nav>span.topnav {
 }
 
 /* HEADER */
-header {
-    padding-top: 80px !important;
-}
 
 
 /* FOOTER */
@@ -77,7 +74,6 @@ article {
     width: 100% !important;
     height: auto !important;
     position: relative !important;
-    margin-top: 340px !important;
 }
 article {
     z-index:1 !important;
@@ -95,7 +91,7 @@ footer {
 INSTALLER BUTTON
 **/
 #installerbutton{
-    left: 30%;
+    margin: 0 auto !important;
     top: -15px;
 }
 /** INSTALLER BUTTON **/

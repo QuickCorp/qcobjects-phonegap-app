@@ -5,3 +5,11 @@ nav .topnav .login-container {
     position: fixed !important;
     left: 0;
 }
+
+header {
+    padding-top: 80px !important;
+}
+nav,
+article {
+    margin-top: 340px !important;
+}
