@@ -63,11 +63,13 @@ header {
     background: #00c1ff !important;
     color: white !important;
     border-radius: 0% 0% 50% 50% / 0% 0% 33% 33% !important;
-    position: absolute !important;
+    position: fixed !important;
     width: 100% !important;
     overflow: hidden;
     z-index:11 !important;
 }
+
+.topnav {position: fixed !important;}
 
 nav,
 article {
@@ -208,9 +210,14 @@ button:not(.navbtn):hover:after {
     left: 0;
 }
 
+html{
+  position: absolute !important;
+}
+
 nav {
     z-index:12 !important;
 }
+
 footer {
     z-index: 13 !important;
 }

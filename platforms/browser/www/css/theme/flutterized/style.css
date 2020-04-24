@@ -46,9 +46,6 @@ nav>span.topnav {
 }
 
 /* HEADER */
-header {
-    padding-top: 80px !important;
-}
 
 
 /* FOOTER */
@@ -66,18 +63,19 @@ header {
     background: #00c1ff !important;
     color: white !important;
     border-radius: 0% 0% 50% 50% / 0% 0% 33% 33% !important;
-    position: absolute !important;
+    position: fixed !important;
     width: 100% !important;
     overflow: hidden;
     z-index:11 !important;
 }
+
+.topnav {position: fixed !important;}
 
 nav,
 article {
     width: 100% !important;
     height: auto !important;
     position: relative !important;
-    margin-top: 340px !important;
 }
 article {
     z-index:1 !important;
@@ -95,7 +93,7 @@ footer {
 INSTALLER BUTTON
 **/
 #installerbutton{
-    left: 30%;
+    margin: 0 auto !important;
     top: -15px;
 }
 /** INSTALLER BUTTON **/
@@ -212,9 +210,14 @@ button:not(.navbtn):hover:after {
     left: 0;
 }
 
+html{
+  position: absolute !important;
+}
+
 nav {
     z-index:12 !important;
 }
+
 footer {
     z-index: 13 !important;
 }
